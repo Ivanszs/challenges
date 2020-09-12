@@ -1,4 +1,4 @@
-/**
+/*
  * @param {string} secret
  * @param {string} guess
  * @return {string}
