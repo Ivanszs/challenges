@@ -1,0 +1,40 @@
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+let maxProduct = function(nums) {
+  let newNums = [];
+  //create a new array with the products of the input array.
+  for (let n = 0; n < nums.length; n++) {
+    newNums.push(nums[n] * nums[n+1]);
+  }
+  //take the largest number of the new array.
+  let max = newNums[0];
+  for (i = 0; i < newNums.length; i++) {
+    if (max < newNums[i]) {
+      max = newNums[i];
+    }
+  }
+  return max;
+};
+
+
+stonks
+
+/*
+ * @param {number[]} prices
+ * @return {number}
+ */
+let maxProfit = function(prices) {
+  let profit = [];
+  for (i = 0; i < prices.length; i++) {
+    for (k = i+1; k < prices.length; k++) {
+      profit.push(prices[k] - prices[i]);
+    }
+  }
+  let finalProfit = Math.max.apply(0, profit);
+  if (finalProfit < 0 || finalProfit === undefined || finalProfit === null) {
+    finalProfit = 0
+  }
+  return finalProfit
+};
