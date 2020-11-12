@@ -17,7 +17,7 @@ var isRobotBounded = function(instructions) {
   //array to save locations, and later compare them, if they repeat, robot is bound to the circle
   let locationHistory = [];
   let repeatedLocations = [];
-  for (i = 0; i < instructions.length; i++) {
+  for (let i = 0; i < instructions.length; i++) {
     if (instructions.charAt(i) == 'R' && orientation == 3) {
       orientation - 3;
     } else if (instructions.charAt(i) == 'R') {
