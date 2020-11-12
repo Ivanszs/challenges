@@ -3,11 +3,11 @@
  * @param {string} guess
  * @return {string}
  */
-var getHint = function(secret, guess) {
-  bulls = 0
-  cows = 0
+let getHint = function(secret, guess) {
+  bulls = 0;
+  cows = 0;
   //bulls
-  for (b = 0; b < secret.length; b++) {
+  for (let b = 0; b < secret.length; b++) {
     if (secret[b] == guess[b]) {
       bulls++;
       //cows--;
@@ -24,5 +24,5 @@ var getHint = function(secret, guess) {
     }
   }
     
-  return bulls + 'A' + cows + 'B'
+  return bulls + 'A' + cows + 'B';
 };
