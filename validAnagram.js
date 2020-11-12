@@ -15,8 +15,8 @@ let isAnagram = function(s, t) {
   let nStr = [];
 //empty array to log the iteration number of already checked characters so they don´t repeat
   let dNum = [];
-  for (k = 0; k < s.length; k++) {
-    for (i = 0; i < s.length; i++) {
+  for (let k = 0; k < s.length; k++) {
+    for (let i = 0; i < s.length; i++) {
       if (s.charAt(k) === t.charAt(i) && dNum.includes(i) == false) {
         nStr.push(s.charAt(k));
         dNum.push(i); /*pushes iteration number in an array to compare it at the start of this if statement */
@@ -32,5 +32,3 @@ let isAnagram = function(s, t) {
     return false;
   }
 };
-isAnagram(papopepo,pepopapo
-  )
