@@ -9,9 +9,9 @@ var numSubarrayProductLessThanK = function(nums, k) {
     let currentProduct = nums[i];
     for (let j = i; j < nums.length; j++) {
       if (i === j && nums[i] < k) {
-        lessThanK++; /* hasta aca funca*/
-      } else
-      currentProduct *= nums[k];
+        lessThanK++; /* fix these else-if logic ._.*/
+      } else {
+      currentProduct *= nums[k]; }
       if (currentProduct < k) {
         lessThanK++;
       }
@@ -20,7 +20,3 @@ var numSubarrayProductLessThanK = function(nums, k) {
   }
   return lessThanK
 };
-
-let garrey = [1,2]
-let fam = 2 * garrey[1]
-console.log(fam)
