@@ -13,7 +13,7 @@ let maxProduct = function(nums) {
   }
   //take the largest number of the new array.
   let max = newNums[0];
-  for (i = 0; i < newNums.length; i++) {
+  for (let i = 0; i < newNums.length; i++) {
     if (max < newNums[i]) {
       max = newNums[i];
     }
