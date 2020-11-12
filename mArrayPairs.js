@@ -18,13 +18,13 @@ let maxProduct = function(nums) {
   
   //loop that makes a new array with the products.
   
-  for (i = 0; i < nums.length; i++) {
+  for (let i = 0; i < nums.length; i++) {
     newNums.push(nums[i] * nums[i+1]);
   }
   
   let higher = newNums[0];
   //loop through newNums, compare 2 numbers, assign the higher number to a let var.
-  for (n = 0; n < newNums.length; n++) {
+  for (let n = 0; n < newNums.length; n++) {
     if (higher < newNums[n]) {
       higher = newNums[n];
     }
