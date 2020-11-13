@@ -1,3 +1,5 @@
+//gets the maximum product that can be achieved between 2 numbers inside an array
+
 function max(arr) {
     let maxNumber = 0;
     let secondMaxNumber = 0;
