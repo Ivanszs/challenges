@@ -16,4 +16,4 @@ function max(arr) {
         }
     }
     return maxNumber * secondMaxNumber;
-}
+};
