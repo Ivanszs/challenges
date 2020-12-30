@@ -12,5 +12,5 @@ const createTargetArray = function(nums, index) {
   for (let i = 0; i < nums.length; i++) {
    target.splice(index[i], 0, nums[i]);
   }
-  return target
+  return target;
 };
