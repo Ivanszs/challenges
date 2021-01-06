@@ -2,9 +2,7 @@
 /*
 Looks for the maximum product of 2 consecutive numbers that can be
 achieved inside an array of numbers
- * @param {number[]} nums
- * @return {number}
- */
+*/
 let maxProduct = function(nums) {
   let newNums = [];
   //create a new array with the products of the input array.
